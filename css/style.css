@@ -23,3 +23,24 @@ h1{
 
 
 /* MAIN */
+main{
+    display: flex;
+    justify-content: center;
+}
+
+/* grandezza della griglia */
+#grid{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    border: 1px solid black;
+}
+
+/* grandezza delle box */
+.box{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid black;
+}
