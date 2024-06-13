@@ -44,3 +44,8 @@ main{
     height: calc(100% / 10);
     border: 1px solid black;
 }
+
+/* click della box */
+.clicked{
+    background-color: aquamarine;
+}
