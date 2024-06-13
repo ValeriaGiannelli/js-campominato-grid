@@ -38,9 +38,12 @@ for(i = 1; i <= 100; i++){
         function(){
             // aggiungo una classe alla cella selezionata
             cell.classList.add("clicked")
-            
+
+            // al click stampo in console il "testo" contenuto in ogni cella
+            console.log(cell.innerText);
         }
     );
+
 
     // lo inserisco nel contenitore
     container.append(cell);
