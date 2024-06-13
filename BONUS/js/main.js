@@ -114,15 +114,18 @@ btn.addEventListener("click",
             // creo l'elemento con la funzione
             let cell = createElemntWithClass("div", "box")
 
-            if(numCell === 81){
-                cell.classList.add("box_81");
-            } else if (numCell === 49) {
-                cell.classList.add("box_49");
-            }
-            
+            // if(numCell === 81){
+            //     cell.classList.add("box_81");
+            // } else if (numCell === 49) {
+            //     cell.classList.add("box_49");
+            // }
+
             // do una dimensione a seconda della grandezza
-            // let radix = Math.sqrt(numCell);
-            // cell.style.width = calc(100% / ${radix});
+            let radix = Math.sqrt(numCell);
+            
+            let grandezza = 100 / radix;
+            cell.style.width = `${grandezza}%`;
+            cell.style.height = `${grandezza}%`;
 
             // inserisco che ogni cella abbia il suo numero
             cell.append(i);
