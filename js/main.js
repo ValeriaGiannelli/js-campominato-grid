@@ -28,6 +28,11 @@ for(i = 0; i < 100; i++){
     console.log(cell);
 
     // creo un evnetListener su questo elemento
+    cell.addEventListener("click", 
+        function(){
+            cell.classList.add("clicked");
+        }
+    );
 }
 
 // ogni elemento creato avrà un click che andrà ad aggiungere una classe
