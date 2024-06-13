@@ -5,16 +5,6 @@
 // Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.
 
 
-// AL CLICK DEL BOTTONE FACCIO COMPARIRE LA GRIGLIA
-
-
-// prendo il bottone
-
-
-// al click del bottone aggiungo una classe alla griglia che la farà comparire
-
-/****************************************/
-
 // CREO LA GRIGLIA DINAMICA
 
 // prendo l'elemento nella quale dovrà comparire
@@ -49,3 +39,21 @@ for(i = 1; i <= 100; i++){
     container.append(cell);
 
 }
+
+/****************************************/
+
+// AL CLICK DEL BOTTONE FACCIO COMPARIRE LA GRIGLIA
+
+
+// prendo il bottone
+const btn = document.querySelector(".start_game");
+
+// al click del bottone aggiungo una classe alla griglia che la farà comparire
+
+btn.addEventListener("click", 
+    function(){
+        container.classList("show");
+    }
+);
+
+/****************************************/
