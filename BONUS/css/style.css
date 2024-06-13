@@ -54,6 +54,7 @@ main{
     border: 1px solid black;
 }
 
+/* 
 .box_81{
     width: calc(100% / 9)!important;
     height: calc(100% / 9)!important;
@@ -62,7 +63,7 @@ main{
 .box_49{
     width: calc(100% / 7) !important;
     height: calc(100% / 7) !important;
-}
+} */
 
 /* click della box */
 .clicked{
