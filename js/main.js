@@ -13,11 +13,9 @@ console.log(container);
 
 // creo la griglia interna andando a creare un elemento per ogni spazio che ho (in questo caso 10*10 = 100)
 for(i = 1; i <= 100; i++){
-    // creo l'elemento (occhio, con innerHTML non riesci facilmente)
-    let cell = document.createElement("div");
 
-    // creo la sua classe interna
-    cell.classList.add("box");
+    // creo l'elemento con la funzione
+    let cell = createElemntWithClass("div", "box")
 
     // inserisco che ogni cella abbia il suo numero
     cell.append(i);
