@@ -49,8 +49,3 @@ for(i = 1; i <= 100; i++){
     container.append(cell);
 
 }
-
-// ogni elemento creato avrà un click che andrà ad aggiungere una classe
-
-
-// ogni click dovrà far comparire in console il numero della cella cliccata
