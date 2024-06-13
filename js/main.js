@@ -22,17 +22,23 @@ const container = document.getElementById("grid");
 console.log(container);
 
 // creo la griglia interna andando a creare un elemento per ogni spazio che ho (in questo caso 10*10 = 100)
-for(i = 0; i < 100; i++){
+for(i = 1; i <= 100; i++){
     // creo l'elemento (occhio, con innerHTML non riesci facilmente)
     let cell = document.createElement("div");
 
     // creo la sua classe interna
     cell.classList.add("box");
 
+    // inserisco che ogni cella abbia il suo numero
+    cell.append(i);
+
+
     // aggiungo un click ad ogni elemento
     cell.addEventListener("click",
         function(){
+            // aggiungo una classe alla cella selezionata
             cell.classList.add("clicked")
+            
         }
     );
 
