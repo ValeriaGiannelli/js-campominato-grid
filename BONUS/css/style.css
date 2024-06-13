@@ -1,3 +1,4 @@
+
 /* codice generale */
 *{
     margin: 0;
@@ -51,6 +52,16 @@ main{
     width: calc(100% / 10);
     height: calc(100% / 10);
     border: 1px solid black;
+}
+
+.box_81{
+    width: calc(100% / 9)!important;
+    height: calc(100% / 9)!important;
+}
+
+.box_49{
+    width: calc(100% / 7) !important;
+    height: calc(100% / 7) !important;
 }
 
 /* click della box */
