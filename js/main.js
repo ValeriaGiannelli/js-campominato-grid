@@ -8,7 +8,7 @@
 // CREO LA GRIGLIA DINAMICA
 
 // prendo l'elemento nella quale dovrà comparire
-const container = document.getElementById("grid");
+const container = document.querySelector(".grid");
 console.log(container);
 
 // creo la griglia interna andando a creare un elemento per ogni spazio che ho (in questo caso 10*10 = 100)
@@ -33,8 +33,6 @@ for(i = 1; i <= 100; i++){
             console.log(cell.innerText);
         }
     );
-
-
     // lo inserisco nel contenitore
     container.append(cell);
 
@@ -52,7 +50,7 @@ const btn = document.querySelector(".start_game");
 
 btn.addEventListener("click", 
     function(){
-        container.classList("show");
+        container.classList.add("show");
     }
 );
 
