@@ -29,13 +29,19 @@ main{
 }
 
 /* grandezza della griglia */
-#grid{
+.grid{
     width: 500px;
     height: 500px;
     display: flex;
     flex-wrap: wrap;
     align-items: start;
     border: 1px solid black;
+    display: none;
+}
+
+/* al click del bottone si mostra la griglia */
+.show{
+    display: flex;
 }
 
 /* grandezza delle box */
