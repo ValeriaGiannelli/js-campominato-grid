@@ -18,21 +18,27 @@
 // CREO LA GRIGLIA DINAMICA
 
 // prendo l'elemento nella quale dovrà comparire
-const container = document.getElementById(grid);
+const container = document.getElementById("grid");
 console.log(container);
 
 // creo la griglia interna andando a creare un elemento per ogni spazio che ho (in questo caso 10*10 = 100)
 for(i = 0; i < 100; i++){
-    // creo l'elemento
-    let cell = `<div class="box"></div>`;
-    console.log(cell);
+    // creo l'elemento (occhio, con innerHTML non riesci facilmente)
+    let cell = document.createElement("div");
 
-    // creo un evnetListener su questo elemento
-    cell.addEventListener("click", 
+    // creo la sua classe interna
+    cell.classList.add("box");
+
+    // aggiungo un click ad ogni elemento
+    cell.addEventListener("click",
         function(){
-            cell.classList.add("clicked");
+            cell.classList.add("clicked")
         }
     );
+
+    // lo inserisco nel contenitore
+    container.append(cell);
+
 }
 
 // ogni elemento creato avrà un click che andrà ad aggiungere una classe
